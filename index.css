@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #4B5563;
+    font-family: monospace;
+    font-size: 18px; /* Slightly smaller font size */
+    color: #D1D5DB;
+}
+
+.container {
+    margin: 100px auto; /* Reduced margin */
+    padding: 30px; /* Reduced padding */
+    max-width: 700px; /* Reduced max-width */
+    border: 6px solid #111827;
+    border-radius: 8px;
+    background: #374151;
+    text-align: center; /* Center text within the container */
+}
+
+.header {
+    display: flex;
+    justify-content: space-around; /* Space around HOME and GUEST */
+    margin-bottom: 10px; /* Reduced space below the header */
+    font-size: 40px; /* Slightly smaller font size */
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between; /* Space between the boxes */
+    margin-bottom: 10px; /* Reduced space below the boxes */
+}
+
+.box {
+    flex: 1; /* Make the boxes take equal width */
+    height: 80px; /* Slightly smaller fixed height for the boxes */
+    margin-right: 10px; /* Reduced space between the boxes */
+    margin-left: 10px;
+    background: black;
+    border: 2.5px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: limegreen;
+    font-size: 50px;
+}
+
+.box:last-child {
+    margin-right: 0; /* Remove margin from the last box */
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 30px; /* Space between the button groups */
+}
+
+.home-buttons, .guest-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Center the buttons horizontally */
+    gap: 5px; /* Reduced space between the buttons */
+}
+
+.home-buttons {
+    margin-right: 180px;
+}
+
+.guest-buttons {
+    margin-left: 110px;
+}
+
+button {
+    background: black;
+    color: whitesmoke;
+    padding: 8px 16px; /* Slightly smaller padding for the buttons */
+    border: solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+.reset-btn {
+}
